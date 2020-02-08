@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    an adaptive site uses specific points at which the elements on the page respond. but there is no other responsive. for example a page might rearrange at 500px wide, but not at 550px
+
+    a fully responsive site takes the adaptive site further. images become responsive reflecting the size of the web page, some headers will reduce in size dynamically and in general if you fluctuate the width of the page, something is always responding to fit the page
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    a mobile first site is a site designed to be viewed on a mobile device first. that means before media queries the site is designed for the mobile screen. media queries then work outward, as the page grows wider the page adapts. instead of the opposite that occurs for a desktop first design. the breakpoints are then looking for min-width not max-width
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    when using rem and em units, it is easiest to use the font-size change because it causes the rem units to be equivalent to pixel size using 1em as 10px. so 10em= 100px
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    preprocessing is a process that allows css to be written more like a code than the original css allowed. you are allowed conditionals and variables and even functions. so preprocessing then turns all of your code into actual css. saving you a lot of time and many headaches
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    nesting is by far the best part of preprocessing. parametric mixins can be quite confusing if not handled well
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
