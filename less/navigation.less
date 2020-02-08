@@ -1,5 +1,9 @@
 // Navigation code here
 .home-header{
+    @media(@mobile){
+        padding-top: 20px;
+    }
+
     .flexCol(space-between; center);
     h1{
         width: 60%;
@@ -7,19 +11,32 @@
         text-align: center;
         .centermargin();        
         margin-bottom: 15px;
+        @media (@mobile) {
+            font-size: 35px;            
+            // padding-top: 20px;
+        }
+
     }
 
     .nav-bar{
         font-size: 20px;
         .flexRow(space-between; center);                
-        width: 50%;        
+        width: 60%;        
         .centermargin();
         // margin-bottom: 15px;
         padding-bottom: 5px;
+        @media (@mobile){            
+            width: 80%;
+            justify-content: space-around;
+        }
 
         a{
             color: black;
             text-decoration: none;
+
+            @media (@mobile){
+                font-size: 16px;
+            }
         }
     }
 
