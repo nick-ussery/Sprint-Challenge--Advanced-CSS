@@ -1,1 +1,27 @@
 // Mixins Here
+
+.flexRow(@justify; @align){
+    display: flex;
+    justify-content: @justify;
+    align-content: @align;
+}
+
+.flexCol(@justify; @align){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-content: @align;
+}
+
+.button(@border; @padding; @bg; @color){
+    border: @border;
+    padding: @padding;
+    border-radius: 5%;
+    background-color: @bg;
+    color: @color;
+}
+
+.centermargin(){
+    margin-left: auto;
+    margin-right: auto;
+}
